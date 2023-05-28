@@ -46,8 +46,7 @@ jupyter-client==7.1.2
 jupyter-console==6.4.0
 jupyter-core==4.9.1
 jupyterlab-pygments==0.1.2
-language-selector==0.1
-launchpadlib==1.10.16
+launchpadlib>=1.10.16
 lazr.restfulclient==0.14.4
 lazr.uri==1.0.6
 lockfile==0.12.2
