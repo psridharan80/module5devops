@@ -11,9 +11,11 @@ jobs:
             #2 Create a virtual environment and install dependencies
             - run:
                 name: install dependencies
+                      Clear pip cache
                 command: | 
-                        python3.8 -m venv venv
+                        python3.7 -m venv venv
                         . venv/bin/activate
+                        pip cache purge
                         pip install --upgrade pip
                         pip install -r requirements.txt
             #3 Run coding convention software plus tester.
