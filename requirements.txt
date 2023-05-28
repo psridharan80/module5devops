@@ -21,7 +21,6 @@ decorator>=4.4.2
 defusedxml==0.7.1
 distro>=1.7.0
 distro-info==1.0
-duplicity>=0.8.21
 entrypoints==0.4
 exceptiongroup==1.1.1
 fasteners==0.14.1
