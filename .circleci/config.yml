@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
       docker:
-      - image: circleci/python:3.10
+      - image: circleci/python:3.8
       working_directory: ~/devops
       steps:
             #1 Obtain repo from Github
@@ -12,9 +12,10 @@ jobs:
             - run:
                 name: install dependencies
                 command: | 
-                        python3 -m venv venv
+                        python3.8 -m venv venv
                         . venv/bin/activate
-                        pip install -r requirements.txt
+                        python3.8 -m pip install -r requirements.txt
+                        
             #3 Run coding convention software plus tester.
             - run:
                 name: run tests
