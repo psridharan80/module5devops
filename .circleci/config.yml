@@ -19,9 +19,14 @@ jobs:
             - run:
                 name: install flake8
                 command: |
-                      pip install flake8    
+                      pip install flake8   
+            #4 install pytest     
+            - run:
+                name: install pytest
+                command: |
+                      pip install pytest      
                         
-            #4 Run coding convention software plus tester.
+            #5 Run coding convention software plus tester.
             - run:
                 name: run tests
                 command: | 
