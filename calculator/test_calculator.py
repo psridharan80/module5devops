@@ -11,4 +11,3 @@ class TestCalculator:
 
     def test_addition3(self):
         assert 1 == calculator.add(-2, 3)
-
