@@ -15,8 +15,13 @@ jobs:
                         python3.8 -m venv venv
                         . venv/bin/activate
                         python3.8 -m pip install -r requirements.txt
+            #3 install flake 8
+            - run:
+                name: install flake8
+                command: |
+                      pip install flake8    
                         
-            #3 Run coding convention software plus tester.
+            #4 Run coding convention software plus tester.
             - run:
                 name: run tests
                 command: | 
